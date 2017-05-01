@@ -22,4 +22,8 @@ Pod::Spec.new do |s|
   s.header_mappings_dir = 'Project/Classes/include'
   s.source_files = 'Project/Classes/**/*.{h,cpp,c}'
   s.xcconfig = {'CLANG_ENABLE_MODULES' => 'NO' }
+  s.xcconfig = {
+	'CLANG_ENABLE_MODULES' => 'NO',
+	'HEADER_SEARCH_PATHS' => '"${PODS_ROOT}/GPAC4iOS/Project/Classes/Include"'
+	}
 end
