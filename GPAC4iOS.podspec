@@ -13,13 +13,13 @@ Pod::Spec.new do |s|
   s.homepage = "http://gpac.wp.mines-telecom.fr/"
   s.license      = 'LGPL'
   s.authors       = "GPAC"
-  s.source       = { :git => "https://github.com/Keemotion/GPAC4iOS.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/VladConan/GPAC4iOS.git", :tag => s.version.to_s }
 
   s.platform = :ios
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
   
-  s.header_mappings_dir = 'Classes/include'
-  s.source_files = 'Classes/**/*.{h,cpp,c}'
+  s.header_mappings_dir = 'Project/Classes/include'
+  s.source_files = 'Project/Classes/**/*.{h,cpp,c}'
   s.xcconfig = {'CLANG_ENABLE_MODULES' => 'NO' }
 end
